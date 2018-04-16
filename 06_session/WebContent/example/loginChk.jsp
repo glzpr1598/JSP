@@ -1,8 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <%
-	// request 객체를 통해 쿠키를 가져온다.
-	Cookie[] cookies = request.getCookies();
+/* 세션 체크 : 로그인 여부를 확인하여 페이지를 보여주거나 돌려보낸다. */
+String userId = (String)session.getAttribute("userId");
+
+if (userId == null) { // 세션 만료(로그아웃)
+	response.sendRedirect("login.jsp");
+}
 %>
 <html>
     <head>
@@ -14,11 +19,7 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
-    	<h1>쿠키 가져오기</h1>
-        <% for (Cookie temp : cookies) { %>
-        		<h3>쿠키 이름 : <%= temp.getName() %></h3>
-        		<h3>쿠키 값 : <%= temp.getValue() %></h3>
-        <% } %>
+        <h2><%= userId %>님은 현재 로그인 상태입니다.</h2>
     </body>
     <script>
 

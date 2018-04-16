@@ -25,4 +25,28 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    
+    <!-- user, password, url, driver를 서버 context파일에 저장해놓고 불러쓰면 편리함. -->
+    <!-- 
+    name : Resource를 불러올 이름
+    auth : 어디서 사용하는지
+    type : resource 객체화 시 참조 객체 
+    -->
+    <Resource
+    	name="jdbc/Oracle"
+    	auth="Container"
+    	type="javax.sql.DataSource"
+    	driverClassName="oracle.jdbc.driver.OracleDriver"
+    	url="jdbc:oracle:thin:@localhost:1521:xe"
+    	username="web_user"
+    	password="pass"
+    />
+    <!-- 추가 옵션
+    maxActive : 연결 최대 허용 수
+    maxIdle : 연결을 항상 유지하는 수
+    maxWait : 최대 대기시간 
+    -->
+    
+    
 </Context>

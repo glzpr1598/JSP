@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>서버에서 받은 내용</h1>
-        <!-- 값 가져오기 : request.getParameter -->
+        <!-- request.getParameter : 값 가져오기  -->
         <p>이름 : <%= request.getParameter("name") %></p>
         <p>성별 : 
 	        <% if (request.getParameter("gender").equals("male")) { %>
@@ -22,7 +22,7 @@
 	        	여자
 	        <% } %>
         </p>
-        <!-- 여러개의 값 가져오기(checkbox) : request.getParameterValues -->
+        <!-- request.getParameterValues : 여러개의 값 가져오기(checkbox) -->
         <p>취미 : 
         	<%
         	String[] arrHobby = request.getParameterValues("hobby");

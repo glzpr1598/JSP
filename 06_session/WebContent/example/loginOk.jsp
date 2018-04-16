@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!-- 한글이 안깨지게 나오려면 인코딩 설정 해줘야함 -->
 <% request.setCharacterEncoding("UTF-8"); %>
 <html>
     <head>
@@ -12,9 +11,15 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
-        <h1>Hello, JSP</h1>
+        <h1>로그인 성공</h1>
+        <h3><%= session.getAttribute("userId") %>님 반갑습니다.</h3>
+        <button id="btn1">로그아웃</button>
+        <br>
+        <a href="loginChk.jsp">로그인 상태에서 들어갈 수 있는 페이지</a>
     </body>
     <script>
-
+		$("#btn1").click(function() {
+			location.href="logout.jsp";
+		});
     </script>
 </html>
