@@ -55,7 +55,7 @@
         </table>
         <a href="stmt.jsp">Statement를 이용한 테이블 생성</a>
         <br>
-        <a href="pstmt.jsp">PreparedStatement를 이용한 테이블 생성</a>
+        <a href="pstmt.jsp">PreparedStatement를 이용한 데이터 삽입</a>
     </body>
     <script>
 
