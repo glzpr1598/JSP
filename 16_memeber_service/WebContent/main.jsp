@@ -20,7 +20,7 @@
     </head>
     <body>
         <div class="classLogin">
-        	<%= id %>님 반갑습니다. <button>로그아웃</button>
+        	<%= id %>님 반갑습니다. <button id="btnLogout">로그아웃</button>
         </div>
         <h1>Main page</h1>
         
@@ -29,6 +29,9 @@
         <jsp:include page="memberList.jsp"></jsp:include>
     </body>
     <script>
-
+    	// 로그아웃
+		$("#btnLogout").click(function() {
+			location.href="logout.jsp";
+		});
     </script>
 </html>

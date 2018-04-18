@@ -16,6 +16,7 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
+    	<h1>로그인</h1>
         <form action="loginProc.jsp" method="post">
             <table>
                 <tr>

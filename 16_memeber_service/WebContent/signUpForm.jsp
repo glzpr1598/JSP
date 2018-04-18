@@ -16,6 +16,7 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
+    	<h1>회원가입</h1>
         <form action="signUpProc.jsp" method="post">
         	<table>
 	        	<tr>
@@ -37,8 +38,8 @@
 	        	<tr>
 	        		<td>성별</td>
 	        		<td>
-	        			<input type="radio" name="gender" value="male"/> 남성
-	        			<input type="radio" name="gender" value="female"/> 여성
+	        			<input type="radio" name="gender" value="남"/>남성
+	        			<input type="radio" name="gender" value="여"/>여성
 	        		</td>
 	        	</tr>
 	        	<tr>

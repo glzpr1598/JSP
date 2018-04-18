@@ -58,11 +58,19 @@
 				<td><%= rs.getInt("age") %></td>
 				<td><%= rs.getString("gender") %></td>
 				<td><%= rs.getString("email") %></td>
-				<td><a href="">삭제</a></td>
+				<form action="delete.jsp" method="post">
+				<td>
+					
+						<input type="hidden" name="id" value="<%= rs.getString("id") %>">
+						<input type="submit" value="삭제">
+					
+				</td>
+				</form>
+				<!-- form을 쓰지 않고 href를 get방식으로 보내는 방법도 있음. -->
+				<%-- <td><a href="delete.jsp?id=<%= rs.getString("id") %>">삭제</a></td> --%>
 			</tr>
 	<%}	%>
 </table>
-
 <%
 	/* 자원 반납 */
 	if (rs !=null) rs.close();
