@@ -27,10 +27,10 @@
         	<li><a href="taglist/forEachTag.jsp">c:forEach</a></li>
         	<li><a href="taglist/forTokens.jsp">c:forTokens</a></li>
         	<li><a href="taglist/importTag.jsp">c:import</a></li>
-        	<li><a href="taglist/">c:url</a></li>
+        	<li><a href="">c:url(개별학습)</a></li>
         	<li><a href="taglist/redirectTag.jsp">c:redirect</a></li>
-        	<li><a href="taglist/">c:catch</a></li>
-        	<li><a href="taglist/">c:out</a></li>
+        	<li><a href="">c:catch(개별학습)</a></li>
+        	<li><a href="">c:out(개별학습)</a></li>
         	<li><a href="taglist/functionTag.jsp">function tag</a></li>
         </ul>
     </body>

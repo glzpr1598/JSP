@@ -18,8 +18,7 @@
          --%>
          
          <!-- 파라미터도 삽입 가능 -->
-         <c:redirect url="https://www.google.co.kr/result">
-         	<c:param name="search_query" value="jsp"></c:param>
+         <c:redirect url="https://www.google.co.kr/">
          </c:redirect>
     </body>
     <script>

@@ -6,6 +6,13 @@
 	session.setAttribute("myId", "admin");
 	session.setAttribute("uId", "105784");
 %>
+<%
+	/* 
+	set 태그 : 페이지 내에서 EL  태그로 사용할 수 있는 변수 생성
+	<c:set var=변수명 vlaue=값 [scope=영역]/>
+	<c:set var=변수명 [scope=영역]>값</c:set> 
+	*/
+%>
 <html>
     <head>
         <meta charset="utf-8">
@@ -16,11 +23,6 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
-        <!--
-         set 태그 : 페이지 내에서 EL  태그로 사용할 수 있는 변수 생성
-        <c:set var=변수명 vlaue=값 [scope=영역]/>
-        <c:set var=변수명 [scope=영역]>값</c:set>
-        -->
         <h3>set tag option</h3>
         <ul>
         	<li>var : EL에서 사용할 변수명</li>
